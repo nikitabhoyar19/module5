@@ -1,0 +1,192 @@
+
+* {  /*this * we used for changing default padding and marging of our site */
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    box-sizing: border-box;
+  }
+  #wrapper {
+    display: flex;
+    background-color: #f5f5fb;
+  }
+  /*due all div in wrapper and wrapper have display flex property 
+  all the contents are merging like left into in middle and continue..*/
+  .leftside {
+    display: flex;
+    max-width: 300px;
+    padding: 20px;
+    background-color: #ffff;
+    /* justify-content: center; */
+    /* align-items: center*/
+  } /* This two statements causing left side bar content to be in middle from bottom and top */
+  
+  .leftside img {
+    margin-top: 40px !important;
+
+    border-radius: 50%;
+    width: 120px;
+    margin: 0px auto;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.051);
+  }
+  /* here we add shadow to image */
+  
+  .leftside ul {
+    text-align: center;
+  }
+  
+  .leftside ul li {
+    list-style: none;
+  }
+  .leftside h3 {
+    margin-top: 20px;
+    font-size: 15px;
+}
+.leftside .nav__email{
+    color: #ccc;
+}
+.nav_menuitems a{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(70, 66, 66);
+    text-decoration: none;
+}
+.nav_menuitems a:hover {
+    color: black;
+}
+.active a{
+    color: black;
+}
+
+.leftside .nav__footer {
+  background-color: #f5f5fb;
+  border-radius: 12px;
+  height: 232px;
+  margin-top: 70px;
+  padding: 24px;
+}
+
+.leftside .nav__footer p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #0a5ad1;
+}
+
+
+.leftside .nav__btn {
+  border: 0px;
+  margin: 48px 0px;
+  background-color: #5e81f4;
+  color: white;
+  text-align: center;
+  padding: 14px 35px;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+/* middle content */
+.main {
+    flex: 1;
+}
+/* flex 1 to main content make it superior and takes all the available space means middle ki space leli aur rightside bar ko push kar diya*/
+.main input[type=text] {
+    padding: 6px;
+    border: none;
+    margin-top: 80px;
+    font-size: 17px;
+    border-radius: 5px;
+}
+.main button {
+    margin-left: 40px;
+    color: rgb(156, 151, 151);
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f5f5fb;
+}
+.main .heading {
+    margin-top: 40px;
+    margin-left: 60px;
+}
+.main .navbar {
+    display: flex;
+    padding: 20px;
+}
+.main nav {
+    flex: 1;
+    text-align: right;
+}
+.main nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+.main nav ul li {
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 20px;
+}
+.main_nav_menuitems a{
+    margin-top: 50px;
+    color: gray;
+    text-decoration: none;
+}
+.main_nav_menuitems a:hover {
+    color: rgb(0, 119, 255);
+}
+.active1 a{
+    color: rgb(0, 119, 255);
+}
+.albums .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: left;
+  margin-left: 60px;
+}
+.albums .col-1 {
+  flex-basis: 30%;
+  min-width: 280px; 
+  text-align: center;
+}
+.albums .col-1 img {
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px rgb(177, 169, 169);
+}
+.albums .col-1 h3 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+.main .songs_list .title {
+  margin-top: 40px;
+  margin-left: 60px;
+}
+.rightside {
+  max-width: 300px;
+  width: 100%;
+  background-color: #fff;
+}
+
+/* rightside contents */
+/* aur idhr rightsidebar 300px kiy */
+.rightside img {
+  align-content: center;
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  margin-left: 30px;
+  margin-top: 10px;
+  border: 8px solid rgb(67, 52, 87);
+}
+
+.rightside .title {
+ text-align: center;
+ margin-top: 20px;
+ padding-left: 15px;
+}
