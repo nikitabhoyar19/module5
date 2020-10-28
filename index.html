@@ -2,9 +2,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Music pro</title>
+  <!-- icon -->
   <link rel="shortcut icon" href="music.ico" type="image/x-icon">
+  <!-- bootstrap cdn -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;531;600;700&amp;display=swap" rel="stylesheet">
+  <!-- font awesome cdn -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style/style.css">
 </head>
@@ -12,14 +15,16 @@
   <div class="alert">
     <div class="alert alert-danger" role="alert">
       please open in desktop mode ..mobile version is under development.
+      <img src= "alert.jpg" alt= "" >
     </div>
   </div>
   <div id="wrapper">
     <!-- side bar  -->
     <div class="leftside">
       <ul class="nav sidebar">
-        <a href="#" style="text-align: center"><img class="nav__profile" src="nikita.jpg" alt=""></a>
-        <h6 style="text-align: center; margin-top: 15px">Nikita Bhoyar</h6>
+        <a href="#" style="text-align: center">
+          <img class="nav__profile" src="nikita.jpg" alt=""></a>
+        <h6 style="text-align: center; margin-top: 10px">Nikita Bhoyar</h6>
         <p style="text-align: center; font-size: 12px; margin-bottom: 50px">
           nikitambhoyar@gmail.com
         </p>
@@ -120,16 +125,18 @@
 
           <!-- playlist container -->
           <div class="playlist">
-            <div class="music">
+            <div class="row">
+              <div class="music col-md-6">
               <img src="assets/images/playlist/beach.jpg" alt="" />
               <h6>Coloring book</h6>
               <span>Pop King</span>
             </div>
-            <div class="music">
+            <div class="music col-md-6">
               <img src="assets/images/playlist/tower.jpg" alt="" />
-              <h6 style="">Mirage</h6>
+              <h6>Mirage</h6>
               <span>Else twin</span>
             </div>
+          </div>
           </div>
 
           <!-- songs list  -->
@@ -144,7 +151,7 @@
                 </a>
                 <span style="font-weight: 600">Coloring book</span>
                 <span id="music_title">Pop King</span>
-                <span>3.22</span>
+                <span id="music_count">3.22</span>
                 <i class="fa fa-heart-o"></i>
               </div>
               <div class="item">
@@ -182,7 +189,7 @@
         </div>
       </div>
 
-
+<!-- rightside container -->
     <div class="rightside">
       <ul class="nav sidebar">
         <div class="music_player" style="height: 500px">

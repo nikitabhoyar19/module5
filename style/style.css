@@ -6,7 +6,7 @@
 }
 .leftside .nav {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 
   background-color: white;
   height: 100%;
@@ -99,11 +99,11 @@
   background-color: #f5f5fb;
   padding: 40px;
   padding-top: 48px;
-  flex: 1;
+  flex: 1; /* for any text in one line*/
 }
 .header {
-  display: flex;
-  flex-direction: row;
+  display: flex;   /*for managing layout, alignment and sizing */
+  flex-direction: row;   /*contents will be displayed in one line*/
   margin-bottom: 45px;
 }
 .input-group {
@@ -187,26 +187,27 @@
 }
 .playlist {
   display: flex;
-  flex-wrap: nowrap !important;
+  flex-wrap: nowrap !important;  /*this will never wrap its contents or items */
   overflow: scroll;
 }
 .playlist::-webkit-scrollbar {
   display: none;
 }
-.music {
+.col-md-6 .music {
   max-width: 250px;
   padding: 10px;
   box-sizing: border-box;
   margin: 10px;
   cursor: pointer;
   transition: transform 0.5s ease-in-out;
+  padding-bottom: 5px;
 }
 .music:hover {
   transform: translateY(-5px);
 }
 .music img {
   width: 100%;
-  min-width: 250px;
+  min-width: 200px;
   min-height: 250px;
   height: 100%;
   max-height: 250px;
@@ -536,10 +537,67 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .alert {
+  /* .alert {
     display: block;
   }
   #wrapper {
     display: none;
+  } */
+  #content-wrapper {
+    padding: 20px 10px;
   }
+
+  .leftside .sidebar {
+    width: 80px;
+    margin-top: 0px!important;
+    align-items: center!important;
+    padding-left: 1px!important;
+    text-align: center;
+  }
+
+  .leftside p {
+     display: none!important;
+  } 
+  .leftside nav{
+  display: flex;
+justify-content: center;  }
+   
+  .leftside h6 {
+   margin-top: 2px!important;
+   text-align: center;
+  }
+
+  .nav__menuList span {
+    display: none;
+  }
+  .nav__footer{
+    background-color: white;
+    display: none;
+  }
+  .nav__btn {
+  width: 10px;
+  text-align: center;
+  padding: 0px;
+  }
+
+  .leftside .nav__footer p {
+    display: none;
+  }
+
+  .leftside .nav__menuList {
+    padding-top: 0px!important;
+  }
+
+  .main .songsList i{
+    display: none;
+  }
+
+  .main .songsList #music_title{
+    display: none;
+  }
+  
 }
+
+
+
+
